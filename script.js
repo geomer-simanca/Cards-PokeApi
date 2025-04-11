@@ -49,7 +49,7 @@ const crearPokemon2 = async () => {
                 console.log(data.sprites.other.dream_world.front_default)
                 console.log(data.name)
                 console.log(data.abilities[0].ability.name)             
-                hacerDibujo(i,data)
+                hacerDibujo2(i,data)
             }
         }catch(error){
             console.log(error);
@@ -89,6 +89,35 @@ const hacerDibujo = (id,data) => {
     listador.innerHTML += `
         <li id="pokemon-item-${id}"><a class="dropdown-item" href="#">${data.name}</a></li>
     `
+    
+
+    
+}
+
+const hacerDibujo2 = (id,data) => {
+
+    let card = document.getElementById(`pokemon-${id}`)
+    let listador = document.getElementById("dropdown-menu")
+
+    card.innerHTML = `
+        <div class="card" style="width: 18rem; height:400px">
+            <div class="card-header">
+                <p id="nombre-pokemon-${id}" class="mb-0">${data.name}</p>
+            </div>
+
+            <div class="container" style="height: 50%;">
+                <img id="pokemon-img-${id}" src="${data.sprites.other.dream_world.front_default}" class="card-img-top rounded-0 " style=" height: 100%;" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h5 class="card-title">Ability</h5>
+                <p class="card-text" id="ability-pokemon-${id}">${data.abilities[0].ability.name}</p>
+
+            </div>
+        </div>
+    `
+
+    
     
 
     
