@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" container-fluid" style="margin: 0; padding: 0; ">
+
+    <header class=" container-fluid mt-3">
+        <nav id="navbar" class="navbar bg-dark rounded-4 ">
+            <div class="container">
+                <div class="row d-flex flex-column flex-md-row  justify-content-start align-items-center">
+                    <a class="navbar-brand col-12 col-md-3 d-flex justify-content-md-start justify-content-center  align-items-center" href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon"  class="img-fluid w-50 w-sm-25 w-md-15 w-lg-15">
+                    </a>
+
+                    <div class="dropdown mt-4 mt-md-0 col-12 col-md-7 d-flex justify-content-md-end justify-content-center align-items-center position-relative">
+                        <button id="search-btn" class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Buscar Pokemon
+                        </button>
+                        <ul id="dropdown-menu" class="dropdown-menu text-center" style="width: 100%; max-width: 250px; left: 50%; transform: translateX(-50%);">
+                            <li id="pokemon-item-0" ><a class="dropdown-item" href="#">Todos</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class=" container-fluid border mt-5" id="card-container">
+
+        <!-- primera fila de cartas -->
+
+        <div class="row mt-5">
+            <div id="pokemon-1" class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-md-center mt-3 mt-md-0">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <p id="nombre-pokemon-1" class="mb-0"></p>
+                    </div>
+                    
+                    <img id="pokemon-img-1" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/pikachu-pokemon-escarlata-purpura-2888180.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ability</h5>
+                        <p class="card-text" id="ability-pokemon-1"></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="pokemon-2" class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+            <div id="pokemon-3" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+
+        </div>
+
+
+        <!-- segunda fila de cartas -->
+        <div class="row mt-3 mt-md-5">
+            <div id="pokemon-4" class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-md-center  mt-md-0">
+                
+            </div>
+            <div id="pokemon-5" class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+            <div id="pokemon-6" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+
+        </div>
+
+        <!-- tercera fila de cartas -->
+        <div class="row mt-3 mt-md-5">
+            <div id="pokemon-7" class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-md-center  mt-md-0">
+                
+            </div>
+            <div id="pokemon-8" class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+            <div id="pokemon-9" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+
+        </div>
+
+        <!-- cuarta fila de cartas -->
+        <div class="row mt-3 mt-md-5">
+            <div id="pokemon-10" class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-md-center  mt-md-0">
+                
+            </div>
+            <div id="pokemon-11" class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+            <div id="pokemon-12" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+
+        </div>
+
+        <!-- quinta fila de cartas -->
+        <div class="row mt-3 mt-md-5 mb-5 mb-md-5">
+            <div id="pokemon-13" class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-md-center  mt-md-0">
+                
+            </div>
+            <div id="pokemon-14" class="col-12 col-md-4 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+            <div id="pokemon-15" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+        
+        </div>
+    
+    
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+
+</html>
+                
+            </div>
+            <div id="pokemon-15" class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center align-items-center mt-3 mt-md-0">
+                
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
