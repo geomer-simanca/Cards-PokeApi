@@ -102,3 +102,13 @@ body{
         font-size: 3rem;
     }
 }
+
+
+.card {
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d; /* esto ayuda con efectos 3D */
+}
+
+.card:hover {
+    transform: perspective(500px) translateY(8px) rotateY(45deg) scaleY(0.8);
+}
